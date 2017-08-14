@@ -106,7 +106,7 @@ void Sorting::merge_sort_recursive(int *arr, unsigned int N, unsigned int firstI
 	delete[]tempArr;
 }
 
-// Iterative Merge Sort
+// Iterative Merge Sort (still working on)
 void Sorting::merge_sort_iterative(int *arr, unsigned int N, unsigned int firstIndex) {
 	if (N <= 1) return;
 	int *stack = new int[2 * N];
