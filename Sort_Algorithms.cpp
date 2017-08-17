@@ -8,6 +8,13 @@ void Sorting::Swap(T& arg0, T& arg1)
 	arg1 = temp;
 }
 
+template<typename T>
+void Sorting::printArray(const T *arr, unsigned int N) {
+	int i;
+	for (i = 0; i < N; ++i)
+		std::cout << "Item #" << i+1 << ": " << arr[i] << std::endl;
+}
+
 // Selction Sort
 void Sorting::selection_sort(int *arr, unsigned int N, unsigned int firstIndex) {
 	unsigned int i, j, min_id;
